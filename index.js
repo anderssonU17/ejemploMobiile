@@ -11,6 +11,7 @@ const bodegaPrimaria = require('./src/routes/bodegaPrimaria.routes')
 const sectorizacionCliente = require('./src/routes/sectorizacionClientes.routes');
 
 app.use(express.json());
+app.use(express.urlencoded({extended: false}));
 // Configurar CORS
 app.use(cors());
 
