@@ -232,6 +232,11 @@ const loginUser = async (req, res) => {
             user,
             token
         });
+        if (res.status(200))
+        {
+            console.log("LO HICISTE REBIEN CHATOO")
+        }
+
     } catch (error) {
         console.error('Error al intentar iniciar sesión:', error);
         res.status(500).send('Error al intentar iniciar sesión');
